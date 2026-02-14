@@ -20,26 +20,23 @@ h2 {
     color: #444;
 }
 
-/* 统一链接样式 */
-a {
-    text-decoration: none;
-    color: #0066cc;
-}
-
-a:hover {
-    color: #ff6600;
-}
-
-/* 所有模块内部 4 列布局 */
+/* 所有模块固定 4 列 */
 .link-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 8px 20px;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 30px;
+    row-gap: 8px;
     margin-top: 15px;
 }
 
 .link-grid a {
-    padding: 3px 0;
+    text-decoration: none;
+    color: #0066cc;
+    padding: 4px 0;
+}
+
+.link-grid a:hover {
+    color: #ff6600;
 }
 </style>
 </head>
@@ -52,13 +49,13 @@ a:hover {
 <div class="link-grid">
     <a href="https://ieeexplore.ieee.org/Xplore/home.jsp">IEEE</a>
     <a href="https://www.researchgate.net/">ResearchGate</a>
-    <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6221036" target="_blank">IEEE Transactions on Cybernetics</a>
+    <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6221036">IEEE Transactions on Cybernetics</a>
     <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6221021">IEEE T-SMC Systems</a>
-    <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=91">IEEE T-Fuzzy Systems</a> 
-    <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=5962385">IEEE T-NNLS</a> 
-    <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=9">IEEE T-Automatic Control</a>
-    <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6488902">IEEE T-Network Science & Engineering</a>  
-    <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=25">IEEE T-Vehicular Technology</a> 
+    <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=91">IEEE T-Fuzzy Systems</a>
+    <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=5962385">IEEE T-NNLS</a>
+    <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=9">IEEE TAC</a>
+    <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6488902">IEEE TNSE</a>
+    <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=25">IEEE TVT</a>
 </div>
 
 <h2>Funding</h2>
@@ -70,7 +67,7 @@ a:hover {
 <h2>Conferences</h2>
 <div class="link-grid">
     <a href="https://www.call4paper.com/">Conference Search</a>
-    <a href="https://cdc2025.ieeecss.org" target="_blank">CDC</a>
+    <a href="https://cdc2025.ieeecss.org">CDC</a>
 </div>
 
 <h2>Internal</h2>
